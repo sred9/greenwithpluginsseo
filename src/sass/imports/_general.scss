@@ -26,7 +26,7 @@ body {
   --navBg: #006400;
   /*--border: rgba(14, 30, 37, 0.054);*/
   --border: #dee5ef;
-  --navLink: #fff;
+  --navLink: rgba(255, 255, 255, 0.89);
 }
 
 body.dark {
@@ -40,8 +40,8 @@ body.dark {
   --insideBg: #1b1b32!important;
   --sideHover: #f5f6f7;
   --navBg: #0a0a23;
-  --border: rgb(47, 51, 54);
-  --navLink: #fff;
+  --border: #1b1b32;
+  --navLink: rgba(255, 255, 255, 0.89);
 
 }
 
