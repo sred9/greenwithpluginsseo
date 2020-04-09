@@ -480,7 +480,7 @@ img {
 .line-left {
   position: relative;
 
-  &:before {
+ /* &:before {
     background: _palette(accent);
     content: "";
     height: 100%;
@@ -488,7 +488,7 @@ img {
     position: absolute;
     top: 0;
     width: 5px;
-  }
+  }*/
 }
 
 /* Text meant only for screen readers */
