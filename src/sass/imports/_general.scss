@@ -15,15 +15,15 @@ font-style: normal;
 
 body {
   --bg: #F6F6F6!important;
-  --textNormal: #1b1b32!important;
-  --textTitle: #1b1b32!important;
-  --textLink: #1b1b32!important;
+  --textNormal: rgba(14, 30, 37, 0.87)!important;
+  --textTitle: rgba(14, 30, 37, 0.87)!important;
+  --textLink: #006400!important;
   --hr: hsla(0, 0%, 0%, 0.2)!important;
   background-color: var(--bg)!important;
   color: var(--textNormal)!important;
   --insideBg: #FFFFFF!important;
   --sideHover: #5b6ff1;
-  --navBg: #0a0a23;
+  --navBg: #006400;
   --codeBg: #f7f7f7;
   /*--border: rgba(14, 30, 37, 0.054);*/
   --border: #dee5ef;
