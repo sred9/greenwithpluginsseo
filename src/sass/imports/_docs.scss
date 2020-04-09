@@ -131,7 +131,8 @@
   }
 
   .submenu-toggle {
-    color: _palette(meta);
+    /*color: _palette(meta);*/
+	color: var(--textNormal);
     height: 30px;
     position: absolute;
     right: 0;
