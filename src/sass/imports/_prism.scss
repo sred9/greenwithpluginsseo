@@ -10,15 +10,16 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: _palette(primary);
   background: none;
-  font-family: _font(monospace);
+  /*font-family: _font(monospace);*/
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   /*font-size: 0.875rem;*/
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  line-height: 1.5;
+  line-height: 2;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
@@ -38,7 +39,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: _palette(bg);
+  background: var(--navBg);
 }
 
 /* Inline code */
