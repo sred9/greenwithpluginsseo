@@ -441,17 +441,65 @@ img {
   border-left: 5px solid _palette(note);
   border-radius: 5px;
   color: _palette(secondary);
-  margin-bottom: 1.875em;
-  padding: 1em 1.125em;
+  margin-bottom: 1.5em;
+ /*padding: 1em 1.125em;*/
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+   p{
+  padding:0.75rem 0 0.75rem 0rem;
+   margin-bottom: 0;
+  }
+    ul, ol{
+  margin-bottom:0;
+  }	
+    li{
+  padding:0.75rem 0 0.75rem 0;
+  }
 }
-
+.tip {
+  background: #D5EFC2;
+  border-left: 5px solid #92CD59;
+  border-radius: 5px;
+  color: _palette(secondary);
+  margin-bottom: 1.5em;
+  /*padding: 1em 1.125em;*/
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  p{
+  padding:0.75rem 0 0.75rem 0rem;
+  margin-bottom: 0;
+  }
+    ul, ol{
+  margin-bottom:0;
+  }
+    li{
+  padding:0.75rem 0 0.75rem 0rem;
+  }
+}
 .important {
   background: lighten(_palette(important),40%);
   border-left: 5px solid _palette(important);
   border-radius: 5px;
   color: _palette(secondary);
-  margin-bottom: 1.875em;
-  padding: 1em 1.125em;
+  margin-bottom: 1.5em;
+ /*padding: 1em 1.125em;*/
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  p{
+  padding:0.75rem 0 0.75rem 0rem;
+   margin-bottom: 0;
+  }
+    ul, ol{
+  margin-bottom:0;
+
+  }
+  li{
+  padding:0.75rem 0 0.75rem 0;
+  }
+
 }
 
 /* Background gradient */
