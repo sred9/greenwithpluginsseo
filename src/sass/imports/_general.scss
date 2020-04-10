@@ -210,7 +210,7 @@ dl {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 dd {
@@ -257,7 +257,7 @@ td {
 
 th {
   color: _palette(secondary);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .post-content {
@@ -286,7 +286,7 @@ th {
 
 /* Form fields */
 label {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 input[type=checkbox]+label,
@@ -345,7 +345,7 @@ a.button {
   color: #fff;
   display: inline-block;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 500;
  
   height: fit-content;
   letter-spacing: 0.025em;
