@@ -68,7 +68,23 @@
       ]
     }
   },
-	
+	{
+  resolve: `gatsby-plugin-amp`,
+  options: {
+    analytics: {
+      type: 'gtag',
+      dataCredentials: 'include',
+      config: {
+      },
+    },
+    canonicalBaseUrl: 'https://sharp-pike-48a08f.netlify.com/',
+    components: ['amp-form'],
+    excludedPaths: ['/404*', '/'],
+    pathIdentifier: '/amp/',
+    relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+    useAmpClientIdApi: true,
+  },
+},
 
     ],
 };
