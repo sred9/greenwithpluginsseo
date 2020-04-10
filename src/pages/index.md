@@ -3,10 +3,11 @@ title: Home
 sections:
   - actions: []
     component: HeroBlock
-    content: Run your code in production in just a few clicks.
+    content: Our full stack curriculum is free and supported by a passionate open
+      source community
     image: ""
     section_id: hero
-    title: Render Documentation
+    title: Your Career in Web Development Starts Here
     type: heroblock
   - type: contentblock
     component: ContentBlock
