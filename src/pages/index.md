@@ -12,12 +12,6 @@ sections:
   - type: contentblock
     component: ContentBlock
     content: >-
-      ## Your Career in Web Development Starts Here
-
-
-      Our full stack curriculum is free and supported by a passionate open source community.
-
-
       <h3>Learn responsive web design using HTML and CSS</h3>
 
 
@@ -49,7 +43,7 @@ sections:
       <li class="docs-section-item"><a class="docs-item-link" href="/html/home/"><i class="docs-item-icon devicon-vuejs-plain colored"></i> Tailwind CSS<span class="icon-angle-right" aria-hidden="true"></span></a></li>
 
       </ul>
-    title: sdjfjskldf
+    title: ""
   - component: FeaturesBlock
     featureslist:
       - actions: []
