@@ -25,10 +25,12 @@ body {
   --sideHover: #5b6ff1;
   --navBg: #006400;
   --codeBg: #f7f7f7;
+  --codeBorder: #e5e5e5;
   /*--border: rgba(14, 30, 37, 0.054);*/
  /* --border: #dee5ef;*/
   --border: rgba(0, 0, 0, 0.05);
   --navLink: rgba(255, 255, 255, 0.89);
+  
 }
 
 body.dark {
@@ -43,6 +45,7 @@ body.dark {
   --sideHover: #f5f6f7;
   --navBg: #0a0a23;
   --codeBg: #0a0a23;
+  --codeBorder: #0a0a23;
   --border: #1b1b32;
   --navLink: rgba(255, 255, 255, 0.89);
 
