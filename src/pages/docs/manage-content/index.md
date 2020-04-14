@@ -1,96 +1,101 @@
 ---
-title: Bootstrap Images
-weight: 2
+title: Manage Content
+excerpt: >-
+  In this section you'll learn how to add syntax highlighting, examples,
+  callouts and much more.
 template: docs
----		
-Images are very common in modern web design. So styling images and placing it properly on the web pages is very important for improving the user experience.
+---
 
-Using the Bootstrap built-in classes you can easily style images such as making the round cornered or circular images, or give them effect like thumbnails.
+<div class="note">
+  <strong>Note:</strong> This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
+</div>
 
-## Styling Images with Bootstrap
+### Syntax highlighting
 
-Images are very common in modern web design. So styling images and placing it properly on the web pages is very important for improving the user experience.
+You can add a language identifier to enable syntax highlighting in your code block. For example, to highlight the **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
 
-Using the Bootstrap built-in classes you can easily style images such as making the round cornered or circular images, or give them effect like thumbnails.
+<pre>
+```javascript
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
+```
+</pre>
 
-```html
-<img src="images/avatar.svg" class="rounded" alt="Rounded Image">
-<img src="images/avatar.svg" class="rounded-circle" alt="Circular Image">
-<img src="images/avatar.svg" class="img-thumbnail" alt="Thumbnail Image">
+The rendered output looks like this:
+
+```javascript
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
 ```
 
-— The output of the above example will look something like this:
+Or to highlight the **CSS** code, specify `css` next to the tick marks before the fenced code block:
 
-## Creating Responsive Images and Videos
+<pre>
+```css
+body {
+  background: #fff;
+  color: #666;
+  line-height: 1.66667; }
 
-With Bootstrap you can make the images responsive too. Just add the class .img-fluid to the `<img>` tag. This class mainly applies the styles `max-width:100%;` and `height:auto;` to the image so that it scales nicely to fit the containing element — in case if the width of the image is larger than the containing element itself. Check out the following example to see how it works:
+a {
+  color: #d4a259;
+  text-decoration: underline;
+  -webkit-transition: background .3s ease, color .3s ease;
+  transition: background .3s ease, color .3s ease; }
 
-```html
-<img src="images/kites.jpg" class="img-fluid" alt="Flying Kites">
-<img src="images/sky.jpg" class="img-fluid" alt="Cloudy Sky">
-<img src="images/balloons.jpg" class="img-fluid" alt="Hot Air Balloons">
+a:hover {
+  color: #1d1d1d;
+  text-decoration: none; }
+```
+</pre>
+
+The rendered output looks like this:
+
+```css
+body {
+  background: #fff;
+  color: #666;
+  line-height: 1.66667; }
+
+a {
+  color: #d4a259;
+  text-decoration: underline;
+  -webkit-transition: background .3s ease, color .3s ease;
+  transition: background .3s ease, color .3s ease; }
+
+a:hover {
+  color: #1d1d1d;
+  text-decoration: none; }
 ```
 
-You can also make the video or slideshow embedded in a web page responsive without affecting its original aspect ratio. To do this wrap any embed like an `<iframe>`, or `<video>` in a `<div>` element and apply the class .embed-responsive, and an aspect ratio class such as .embed-responsive-16by9.
+## Callouts
 
-You can optionally apply an explicit descendant class .embed-responsive-item on the embedded element to match the styling for other attributes. Here's is an example:
+There are two types of callouts availabale in this theme, **important** and **note**.
 
-```html
-<!-- 21:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-21by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YE7VzlLtp-4"></iframe>
+<div class="important">
+  <strong>Important:</strong> 
+  This is an "Important" callout block of text. 
+  This block indicates a warning or caution.
+  Use it for an important message. 
 </div>
 
-<!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YE7VzlLtp-4"></iframe>
+<div class="note">
+  <strong>Note:</strong> 
+  This is an "Note" callout block of text. 
+  This block signifies a general note or tip.
 </div>
 
-<!-- 4:3 aspect ratio -->
-<div class="embed-responsive embed-responsive-4by3">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YE7VzlLtp-4"></iframe>
-</div>
+## Tables
 
-<!-- 1:1 aspect ratio -->
-<div class="embed-responsive embed-responsive-1by1">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YE7VzlLtp-4"></iframe>
-</div>
-```
+You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
 
-In the above example, we've created the 4 responsive videos with 4 different aspect ratios (21:9, 16:9, 4:3, and 1:1) by using the classes `.embed-responsive-21by9`, `.embed-responsive-16by9`, `.embed-responsive-4by3`, and `.embed-responsive-1by1`, respectively.
-
-## Horizontal Alignment of Images
-
-You can align the images left or right within a larger box using the `.pull-left` or `.pull-right` classes. You can also use the text alignment classes such as `.text-left`, `.text-right`, and `.text-center` on the parent container to align the inline images horizontally left, right, and center.
-
-However, to center align the block-level images you need to use the .mx-auto margin utility class.
-
-Let's take a look at the following example to see how it works:
-
-```html
-<!-- Horizontal alignment using float classes -->
-<div class="box clearfix">
-    <img src="images/avatar.svg" class="pull-left" alt="Sample Image">
-    <img src="images/avatar.svg" class="pull-right" alt="Sample Image">
-</div>
-
-<!-- Left alignment using text alignment classes -->
-<div class="box text-left">
-    <img src="images/avatar.svg" alt="Sample Image">
-</div>
-
-<!-- Right alignment using text alignment classes -->
-<div class="box text-right">
-    <img src="images/avatar.svg" alt="Sample Image">
-</div>
-
-<!-- Center alignment using text alignment classes -->
-<div class="box text-center">
-    <img src="images/avatar.svg" alt="Sample Image">
-</div>
-
-<!-- Center alignment of block-level image using auto margin -->
-<div class="box">
-    <img src="images/avatar.svg" class="d-block mx-auto" alt="Sample Image">
-</div>
-```
+| Title | Title |
+| ------| ----- |
+| Text  | Text  |
+| Text  | Text  |
