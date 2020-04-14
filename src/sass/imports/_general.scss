@@ -4,8 +4,8 @@
  */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css');
-@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,500&display=swap');
+/*@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 html {
 font-family: 'Roboto', ;
 font-weight: 400;
@@ -22,7 +22,8 @@ body {
   background-color: var(--bg)!important;
   color: var(--textNormal)!important;
   --insideBg: #FFFFFF!important;
-  --sideHover: #5b6ff1;
+  /*--sideHover: #5b6ff1;*/
+  --sideHover: #006400;
   --navBg: #006400;
   --codeBg: #f7f7f7;
   --codeBorder: #e5e5e5;
@@ -459,6 +460,8 @@ img {
   }	
     li{
   padding:0.75rem 0 0.75rem 0;
+    font-size: 1.2rem;
+  line-height: 1.7;
   }
 }
 .tip {
@@ -480,6 +483,8 @@ img {
   }
     li{
   padding:0.75rem 0 0.75rem 0rem;
+    font-size: 1.2rem;
+  line-height: 1.7;
   }
 }
 .important {
@@ -502,6 +507,8 @@ img {
   }
   li{
   padding:0.75rem 0 0.75rem 0;
+    font-size: 1.2rem;
+  line-height: 1.7;
   }
 
 }
@@ -616,7 +623,7 @@ img {
 /*...*/
 
 
-section#hero, section#features, section#text-img, section#cta{
+section#hero, section#features, section#text-img, section#cta, section.block{
    max-width: 980px;
    margin: 0 auto;
 }
@@ -725,3 +732,64 @@ color: var(--textNormal);
 .dark-toggle ul.right-menu li.menu-item a:hover{
 color: #5b6ff1;
 }
+
+
+ul.docs-section-items.home li.docs-section-item a.docs-item-link{
+text-decoration: none;
+}
+
+i.docs-item-icon{
+font-size: 2.5rem;
+vertical-align: middle;
+margin-right: 0.75rem;
+}
+
+span.iconify{
+font-size: 2.5rem;
+vertical-align: middle;
+margin-right: 0.75rem;
+}
+
+ul.docs-section-items.home li.docs-section-item a.docs-item-link svg{
+height: 2.5rem;
+width: 2.5rem;
+vertical-align: middle;
+margin-right: 0.75rem;}
+
+section.block .docs-section-items .docs-section-item{
+margin: 0 1.5rem 1rem;
+background-color: #fff;
+box-shadow: #e4e8ee 0px 0px 0px 0.5px;
+}
+
+/*custom icons*/
+
+span.icon-mongodb{
+height: 2.5rem;
+    width: 2.5rem;
+    vertical-align: middle;
+    display: inline-block;
+	background-image: url("/icons/logo-mongodb.svg");
+}
+
+span.icon-jquery{
+height: 2.5rem;
+    width: 2.5rem;
+    vertical-align: middle;
+    display: inline-block;
+	background-image: url("/icons/logo-jquery.svg");
+}
+
+span.icon-chartjs{
+height: 2.5rem;
+    width: 2.5rem;
+    vertical-align: middle;
+    display: inline-block;
+	background-image: url("/icons/logo-chartjs.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/*custom icons*/
+
+

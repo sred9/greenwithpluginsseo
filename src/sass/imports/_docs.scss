@@ -143,7 +143,7 @@
 
 .docs-toc {
   color: _palette(secondary);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   list-style: none;
   margin: 0;
@@ -272,7 +272,6 @@ ul.toc-submenu {
     overflow: hidden;
   }
 
-  .docs-nav,
   .page-nav {
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
@@ -287,6 +286,26 @@ ul.toc-submenu {
     }
   }
 
+  .docs-nav{
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-bottom: 5.625em;
+
+    .sticky {
+      position: initial;
+     /* top: 1.875rem;*/
+      top: 4.6rem;
+    }
+	.sticky-below {
+      position: sticky;
+     /* top: 1.875rem;*/
+      top: 4.6rem;
+    }
+  }
+  
+  
+  
   .docs-nav {
     padding-right: 1em;
     width: 11.5em;

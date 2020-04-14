@@ -4,7 +4,8 @@ import _ from 'lodash';
 import {Layout} from '../components/index';
 import DocsMenu from '../components/DocsMenu';
 import {htmlToReact, getPages, Link, safePrefix} from '../utils';
-
+ 	
+	
 export default class Docs extends React.Component {
     render() {
         let root_page_path = _.get(this.props, 'pageContext.site.data.doc_sections.root_folder') + 'index.md';

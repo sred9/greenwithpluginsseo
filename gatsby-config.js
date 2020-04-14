@@ -6,9 +6,18 @@
         `gatsby-source-data`,
 	`gatsby-plugin-catch-links`,
 	`gatsby-plugin-manifest`,
+	`gatsby-plugin-offline`,
+	`gatsby-plugin-netlify-cache`,
 	`gatsby-plugin-dark-mode`,
 
 
+
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [`gatsby-remark-responsive-iframe`],
+    },
+  },
 
 
 

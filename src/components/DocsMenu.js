@@ -41,6 +41,25 @@ export default class DocsMenu extends React.Component {
                   </ul>
                 </div>
               </div>
+			  
+			 
+			 
+			 
+			 
+			 
+			 <div id="docs-nav-inside" class="docs-nav-inside sticky-below">
+   <button id="docs-nav-toggle" class="docs-nav-toggle">Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span></button>
+   <div class="docs-toc-wrap">
+      <ul id="docs-toc" class="docs-toc">
+         <li class="toc-item"><a href="/docs/">Dommata Sreehas</a></li>
+      </ul>
+   </div>
+</div>
+			 
+			 
+			 
+			 
+			 
             </nav>
         );
     }
