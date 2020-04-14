@@ -172,6 +172,44 @@ collections:
               label: String
               name: string
               widget: string
+  
+  
+  
+  
+  
+ - name: doc_sections
+    label: Documentation Sections
+    files:
+      - name: doc_sections
+        label: Documentation Sections
+        file: src/data/doc_sections.yml
+        fields:
+          - widget: string
+            name: root_folder
+            label: Root Folder
+            required: true
+            default: /mat/
+            hint: >-
+              The path under which the documentation pages will be generated.
+              For example, set to "/" to put all documentation pages at root, or
+              set to "/mat/" to put all documentation pages under "/mat/".
+          - widget: list
+            name: sections
+            label: Sections
+            required: false
+            hint: >-
+              The main sections of the documentation. Every item must be the URL
+              slug representing the section.
+            field:
+              label: String
+              name: string
+              widget: string
+              
+              
+        
+        
+
+
   - name: docs
     label: Documentation Pagess
     folder: src/pages/
