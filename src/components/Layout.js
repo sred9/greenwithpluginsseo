@@ -24,17 +24,9 @@ export default class Body extends React.Component {
                     <meta name="viewport" content="width=device-width, initialScale=1.0" />
                     <meta name="google" content="notranslate" />
 					<link rel="canonical" href={_.get(this.props, 'pageContext.frontmatter.metaurl')} />
-						
-                        
-                        
-                     
-                        
-                        
-						
-	
-
-
-     <meta property="og:locale" content="en_US"/>
+	 //social cards
+	 
+	  <meta property="og:locale" content="en_US"/>
       <meta property="og:type" content="article"/>
       <meta property="og:title" content={_.get(this.props, 'pageContext.frontmatter.title')}/>
       <meta property="og:description" content={_.get(this.props, 'pageContext.frontmatter.excerpt')}/>
@@ -42,7 +34,7 @@ export default class Body extends React.Component {
       <meta property="og:site_name" content="Codevarsity"/>
       <meta property="article:publisher" content="https://www.facebook.com/thecodevarsity/"/>
       <meta property="article:tag" content="html-article"/>
-      <meta property="article:section" content="HTML"/>
+      <meta property="article:section" content={_.get(this.props, 'pageContext.frontmatter.category')}/>
       <meta property="article:published_time" content={_.get(this.props, 'pageContext.frontmatter.published')}/>
       <meta property="article:modified_time" content={_.get(this.props, 'pageContext.frontmatter.modified')}/>
       <meta property="og:updated_time" content={_.get(this.props, 'pageContext.frontmatter.updated')}/>
@@ -55,10 +47,8 @@ export default class Body extends React.Component {
       <meta name="twitter:site" content="@thecodevarsity"/>
       <meta name="twitter:image" content={_.get(this.props, 'pageContext.frontmatter.image')}/>
       <meta name="twitter:creator" content="@thecodevarsity"/>
-
-
-
-
+     
+	  //
 
 
 	
@@ -78,7 +68,7 @@ export default class Body extends React.Component {
                         
                         
                         
-                    <link rel="stylesheet" href={safePrefix('assets/css/main.css')}/>
+                <link rel="stylesheet" href={safePrefix('assets/css/main.css')}/>
                 </Helmet>
                 <div id="page" className="site">
                   <Header {...this.props} />
